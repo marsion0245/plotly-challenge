@@ -1,5 +1,7 @@
 # plotly-challenge
-Bootcamp homework plotly-challenge
+Bootcamp homework [plotly-challenge] (https://plotyhw.herokuapp.com/)
+<br/>
+Click on the link above to open the HW on heroku.
 
 The HW was coded and tested on client.
 All required functions work.
@@ -19,6 +21,4 @@ The third entry in proc file, here app in:
 >web: gunicorn app:app
 
 MUST match the name of application, in my case app 
-
-App now available at:
-[Homerwork](https://plotyhw.herokuapp.com/)
+This publishing excercise took quite some time.
