@@ -1,8 +1,8 @@
 # plotly-challenge
-To access HEROKU installation click (https://plotyhw.herokuapp.com/ "here")
+
+To access HEROKU installation go to (https://plotyhw.herokuapp.com/)
 
 The HW was coded and tested on client, and all required functions worked.
-
 Than I tried to published the solution on HEROKO, it crashed during the process.
 I had to redo env since HEROKU was crashing due to some Python modules compatibility issues, got help from Tom (thanks!). 
 After that I create another environment and republished the solution.
