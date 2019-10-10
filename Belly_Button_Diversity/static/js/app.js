@@ -75,41 +75,33 @@ function buildCharts(sample) {
 
 function buildGauge(value){
 	
-	// let stepColors = [0x70924e, 0x809c5a, 0x8fa667, 0x9fb073, 0xafba80, 0xbec38c, 0xcecd98, 0xddd7a5, 0xede1b1];
-	let stepColors = ['coral', 'coral', 'yellow', 'yellow', 'green', 'green', 'darkgreen', 'darkgreen', 'darkgreen'];
-	// https://codepen.io/njmcode/pen/axoyD/
+	const stepColors = ['rgb(237,225,177)', 'rgb(221,215,165)', 'rgb(206,205,152)', 'rgb(190,195,140)', 'rgb(175,186,128)', 'rgb(159,176,115)', 'rgb(143,166,103)', 'rgb(128,156,90)', 'rgb(112,146,128)'];
 	var data = [
 	  {
 		type: "indicator",
 		//mode: "gauge+number+delta",
 		mode: "gauge+number",
 		value: value,
-		title: { text: "Belly Button Washing Frequency", font: { size: 28 } },
-		// delta: { reference: 5, increasing: { color: "RebeccaPurple" } },
+		title: { text: "<b>Belly Button Washing Frequency</b><br>Scrubs per Week", font: { size: 28 } },
 		gauge: {
 		  axis: { 
 			range: [null, 9], 
 			tickwidth: 1, 
-			tickcolor: "darkblue",
-			//labels: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9']			
+			tickmode: "array",
+			tickvals: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+			//ticktext: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9'],
+			ticks: '',
 		  },
-		  bar: { color: "darkblue" },
+		  bar: { color: "darkred" },
 		  // bgcolor: "white",
 		  borderwidth: 0,
 		  bordercolor: "gray",
-		  steps: stepColors.map((val, idx) => { return { range: [idx, idx + 1], color: val } }), 
-		  // threshold: {
-			// line: { color: "red", width: 4 },
-			// thickness: 0.75,
-			// value: 490
-		  // }
+		  steps: stepColors.map((val, idx) => { return { range: [idx, idx + 1], color: val } }) 
 		}
 	  }
 	];
 
 	var layout = {
-	  // margin: { t: 25, r: 25, l: 25, b: 25 },
-	  // paper_bgcolor: "lavender",
 	  font: { color: "black", family: "Arial" }
 	};
 
