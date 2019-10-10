@@ -2,6 +2,10 @@
 
 To access HEROKU installation go to (https://plotyhw.herokuapp.com/)
 
+Project code in located in Belly_Button_Diversity folder(Belly_Button_Diversity)
+The javascript code is located in [this folder]() 
+
+
 The HW was coded and tested on client, and all required functions worked.
 Than I tried to published the solution on HEROKO, it crashed during the process.
 I had to redo env since HEROKU was crashing due to some Python modules compatibility issues, got help from Tom (thanks!). 
