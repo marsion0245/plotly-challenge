@@ -1,6 +1,12 @@
 # plotly-challenge
 Bootcamp homework plotly-challenge
 
-https://medium.com/the-andela-way/deploying-a-python-flask-app-to-heroku-41250bda27d0
+The HW was coded and tested on client.
+All required functions work.
 
-https://plotyhwmh.herokuapp.com/ | https://git.heroku.com/plotyhwmh.git
+I finally published the solution on HEROKO, had to redo env since HEROKU was crashing due to some Python modules compatibility issues. 
+After that I create another environment and republished the solution.
+The evironment started but when accesing app with bowser I got runtime error.
+Asked TA for support (Tom), we could not make it work.
+Quite a waste of time with this, and it still not working.
+

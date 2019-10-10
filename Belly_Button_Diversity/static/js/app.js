@@ -54,7 +54,15 @@ function buildCharts(sample) {
 			title: `All Results (${readSamplesCount})`,
 			xaxis: {
 				autorange: true,
-				type: "linear"
+				type: "linear",
+				title: {
+					text: 'OTU ID',
+					font: {
+						family: 'Arial',
+						size: 14,
+						color: 'black'
+					}
+				}
 			},
 			yaxis: {
 				autorange: true,
@@ -67,8 +75,9 @@ function buildCharts(sample) {
 
 function buildGauge(value){
 	
-	let colors = ['peachpuff', 'peachpuff', 'peachpuff', 'peachpuff', 'cadetblue', 'cadetblue', 'cadetblue', 'cadetblue', 'cadetblue'];
-	
+	// let stepColors = [0x70924e, 0x809c5a, 0x8fa667, 0x9fb073, 0xafba80, 0xbec38c, 0xcecd98, 0xddd7a5, 0xede1b1];
+	let stepColors = ['coral', 'coral', 'yellow', 'yellow', 'green', 'green', 'darkgreen', 'darkgreen', 'darkgreen'];
+	// https://codepen.io/njmcode/pen/axoyD/
 	var data = [
 	  {
 		type: "indicator",
@@ -78,12 +87,17 @@ function buildGauge(value){
 		title: { text: "Belly Button Washing Frequency", font: { size: 28 } },
 		// delta: { reference: 5, increasing: { color: "RebeccaPurple" } },
 		gauge: {
-		  axis: { range: [null, 9], tickwidth: 1, tickcolor: "darkblue" },
+		  axis: { 
+			range: [null, 9], 
+			tickwidth: 1, 
+			tickcolor: "darkblue",
+			//labels: ['0-1', '1-2', '2-3', '3-4', '4-5', '5-6', '6-7', '7-8', '8-9']			
+		  },
 		  bar: { color: "darkblue" },
 		  // bgcolor: "white",
 		  borderwidth: 0,
 		  bordercolor: "gray",
-		  steps: colors.map((val, idx) => { return { range: [idx, idx + 1], color: val } }), 
+		  steps: stepColors.map((val, idx) => { return { range: [idx, idx + 1], color: val } }), 
 		  // threshold: {
 			// line: { color: "red", width: 4 },
 			// thickness: 0.75,
