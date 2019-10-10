@@ -2,9 +2,13 @@
 
 To access HEROKU installation go to (https://plotyhw.herokuapp.com/)
 
-Project code in located in Belly_Button_Diversity folder(Belly_Button_Diversity)
-The javascript code is located in [this folder]() 
+Project code in located in [Belly_Button_Diversity folder](Belly_Button_Diversity).<br/>
 
+* JavaScript - static/js
+* Python - app.py
+* Data - DataSet, csv were used for testing, published solution works with SQLlite, file bellybutton.sqlite 
+
+On UI I choose to use gauge control for srubs per week control.
 
 The HW was coded and tested on client, and all required functions worked.
 Than I tried to published the solution on HEROKO, it crashed during the process.
