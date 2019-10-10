@@ -1,7 +1,5 @@
 # plotly-challenge
-Bootcamp homework [plotly-challenge](https://plotyhw.herokuapp.com/)
-<br/>
-Click on the link above to open the HW on heroku.
+To access HEROKU installation click (https://plotyhw.herokuapp.com/ "here")
 
 The HW was coded and tested on client, and all required functions worked.
 
